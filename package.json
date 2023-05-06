@@ -1,0 +1,26 @@
+{
+  "name": "real-estate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/curkovicf/real-estate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/curkovicf/real-estate/issues"
+  },
+  "homepage": "https://github.com/curkovicf/real-estate#readme",
+  "dependencies": {
+    "puppeteer": "^20.1.1",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/puppeteer": "^7.0.4"
+  }
+}
