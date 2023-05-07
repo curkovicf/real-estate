@@ -1,11 +1,11 @@
-import { NjuskaloScrapper } from "./njuskalo/njuskalo.scrapper";
+import { NjuskaloScrapper } from './njuskalo/njuskalo.scrapper';
 
 (async () => {
-    const njuskaloScrapper = new NjuskaloScrapper();
+  const njuskaloScrapper = new NjuskaloScrapper();
 
-    // await njuskaloScrapper.getFlatsInZagreb();
+  // await njuskaloScrapper.getFlatsInZagreb();
 
-    await njuskaloScrapper.stealth();
+  await njuskaloScrapper.stealth();
 
-    // await njuskaloScrapper.close();
+  // await njuskaloScrapper.close();
 })();
