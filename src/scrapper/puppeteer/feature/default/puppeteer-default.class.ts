@@ -3,7 +3,7 @@ import { getRandom } from 'random-useragent';
 import puppeteer from 'puppeteer-extra';
 import StealthPlugin from 'puppeteer-extra-plugin-stealth';
 
-export class Puppeteer {
+export class PuppeteerDefault {
   private browser!: Browser;
 
   public async launch(site: string): Promise<Page> {
@@ -24,9 +24,5 @@ export class Puppeteer {
 
   public async close(): Promise<void> {
     await this.browser.close();
-  }
-
-  public isBrowserAlive(): boolean {
-    return !!this.browser;
   }
 }

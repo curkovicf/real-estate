@@ -1,5 +1,3 @@
-import { Puppeteer } from '../puppeteer/puppeteer';
-
 export class NjuskaloScrapper extends Puppeteer {
   public async getFlatsInZagreb(): Promise<void> {
     const url = 'https://www.njuskalo.hr/prodaja-stanova/zagreb';
@@ -26,7 +24,7 @@ export class NjuskaloScrapper extends Puppeteer {
       const page = await browser.newPage();
       await page.goto('https://www.njuskalo.hr/prodaja-stanova/zagreb');
       await page.waitForTimeout(5000);
-      await page.screenshot({ path: 'stealth.png', fullPage: true });
+      await page.screenshot({ path: './resource/stealth.png', fullPage: true });
       await browser.close();
     });
   }
