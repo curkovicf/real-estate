@@ -1,10 +1,11 @@
-import * as puppeteer from 'puppeteer';
+import { NjuskaloScrapper } from "./njuskalo/njuskalo.scrapper";
 
 (async () => {
-    const browser = await puppeteer.launch({  headless: 'new' });
-    const page = await browser.newPage();
-    await page.goto('https://google.com');
-    await page.pdf({path: 'resource/google.pdf'});
+    const njuskaloScrapper = new NjuskaloScrapper();
 
-    await browser.close();
+    // await njuskaloScrapper.getFlatsInZagreb();
+
+    await njuskaloScrapper.stealth();
+
+    // await njuskaloScrapper.close();
 })();
