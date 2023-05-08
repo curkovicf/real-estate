@@ -1,26 +1,32 @@
+import { ScrapeConfig } from './model.interface';
+
 export abstract class Scrapper<T> {
   /**
    * Method that will be used from outside to start the job
+   *
    */
-  public async scrape(): Promise<void> {
-    const data = await this.fetch();
-    await this.store(data);
+  public async scrape(scrapeConfig: ScrapeConfig): Promise<void> {
+    const data = await this.fetch(scrapeConfig.url, scrapeConfig.county);
+
+    await this.store(data, scrapeConfig.resourceUrl, scrapeConfig.fileName);
   }
 
   /**
-   * Method that sets everything up
+   * Kills current session
    */
-  public abstract buildBrowser(): Promise<void>;
+  public abstract killSession(): Promise<void>;
 
   /**
    * Fetch data from target
+   *
    * @protected
    */
-  protected abstract fetch(): Promise<T>;
+  protected abstract fetch(url: string, county: string): Promise<T>;
 
   /**
    * Store data in target format
+   *
    * @protected
    */
-  protected abstract store(data: T): Promise<void>;
+  protected abstract store(data: T, path: string, fileName: string): Promise<void>;
 }
