@@ -4,7 +4,7 @@ import { Browser, Page } from 'puppeteer';
 import { getRandom } from 'random-useragent';
 
 export async function buildPage(url: string): Promise<{ page: Page; browser: Browser }> {
-  const browser = await puppeteer.use(StealthPlugin()).launch({ headless: 'new', args: ['--no-sandbox'] });
+  const browser = await puppeteer.use(StealthPlugin()).launch({ headless: false, args: ['--no-sandbox', '--proxy-server=http://62.14.234.232:443'] });
 
   // 1. Randomize User agent
   const userAgent = getRandom();
