@@ -1,2 +1,8 @@
-#!/bin/sh
-/root/.nvm/versions/node/v19.3.0/bin/node /root/projects/real-estate/dist/index.js
+#!/bin/bash
+
+# Activate the correct version of Node.js
+source /root/.nvm/nvm.sh
+nvm use v19.3.0
+
+# Run your script
+npm run start:ts
