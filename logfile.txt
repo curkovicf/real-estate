@@ -1,0 +1,55 @@
+Now using node v19.3.0 (npm v9.2.0)
+
+> real-estate@1.0.0 start:ts
+> ts-node src/index.ts
+
+Now using node v19.3.0 (npm v9.2.0)
+
+> real-estate@1.0.0 start:ts
+> ts-node src/index.ts
+
+Now using node v19.3.0 (npm v9.2.0)
+
+> real-estate@1.0.0 start:ts
+> ts-node src/index.ts
+
+ProtocolError: Page.addScriptToEvaluateOnNewDocument timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+    at new Callback (/root/projects/real-estate/node_modules/puppeteer-core/src/common/Connection.ts:65:12)
+    at CallbackRegistry.create (/root/projects/real-estate/node_modules/puppeteer-core/src/common/Connection.ts:126:22)
+    at Connection._rawSend (/root/projects/real-estate/node_modules/puppeteer-core/src/common/Connection.ts:266:22)
+    at CDPSessionImpl.send (/root/projects/real-estate/node_modules/puppeteer-core/src/common/Connection.ts:525:29)
+    at FrameManager._FrameManager_createIsolatedWorld (/root/projects/real-estate/node_modules/puppeteer-core/src/common/FrameManager.ts:351:19)
+    at /root/projects/real-estate/node_modules/puppeteer-core/src/common/FrameManager.ts:164:43
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.all (index 1)
+    at async FrameManager.initialize (/root/projects/real-estate/node_modules/puppeteer-core/src/common/FrameManager.ts:161:7)
+Now using node v19.3.0 (npm v9.2.0)
+
+> real-estate@1.0.0 start:ts
+> ts-node src/index.ts
+
+Now using node v19.3.0 (npm v9.2.0)
+
+> real-estate@1.0.0 start:ts
+> ts-node src/index.ts
+
+Now using node v19.3.0 (npm v9.2.0)
+
+> real-estate@1.0.0 start:ts
+> ts-node src/index.ts
+
+Now using node v19.3.0 (npm v9.2.0)
+
+> real-estate@1.0.0 start:ts
+> ts-node src/index.ts
+
+Now using node v19.3.0 (npm v9.2.0)
+
+> real-estate@1.0.0 start:ts
+> ts-node src/index.ts
+
+Error: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.njuskalo.hr/prodaja-stanova/zagreb
+    at navigate (/root/projects/real-estate/node_modules/puppeteer-core/src/common/Frame.ts:370:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Frame.goto (/root/projects/real-estate/node_modules/puppeteer-core/src/common/Frame.ts:323:17)
+    at async CDPPage.goto (/root/projects/real-estate/node_modules/puppeteer-core/src/common/Page.ts:908:12)
