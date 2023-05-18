@@ -5,13 +5,11 @@ import { getRandom } from 'random-useragent';
 
 export async function buildPage(url: string): Promise<{ page: Page; browser: Browser }> {
   const browser = await puppeteer.use(StealthPlugin()).launch({
-    headless: false,
+    headless: 'new',
     args: [
       '--no-sandbox',
-      // '--proxy-server=socks4://95.140.124.161:1080',
+      // '--proxy-server=https://103.167.70.128:8080',
       "--ignore-certificate-errors",
-      "--disable-setuid-sandbox",
-      "--disable-dev-shm-usage",
     ]
   });
 
