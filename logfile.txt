@@ -53,3 +53,42 @@ Error: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.njuskalo.hr/prodaja-stan
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async Frame.goto (/root/projects/real-estate/node_modules/puppeteer-core/src/common/Frame.ts:323:17)
     at async CDPPage.goto (/root/projects/real-estate/node_modules/puppeteer-core/src/common/Page.ts:908:12)
+Now using node v19.3.0 (npm v9.2.0)
+
+> real-estate@1.0.0 start:ts
+> ts-node src/index.ts
+
+Killed
+Now using node v19.3.0 (npm v9.2.0)
+
+> real-estate@1.0.0 start:ts
+> ts-node src/index.ts
+
+ProtocolError: Page.setLifecycleEventsEnabled timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+    at new Callback (/root/projects/real-estate/node_modules/puppeteer-core/src/common/Connection.ts:65:12)
+    at CallbackRegistry.create (/root/projects/real-estate/node_modules/puppeteer-core/src/common/Connection.ts:126:22)
+    at Connection._rawSend (/root/projects/real-estate/node_modules/puppeteer-core/src/common/Connection.ts:266:22)
+    at CDPSessionImpl.send (/root/projects/real-estate/node_modules/puppeteer-core/src/common/Connection.ts:525:29)
+    at FrameManager.initialize (/root/projects/real-estate/node_modules/puppeteer-core/src/common/FrameManager.ts:162:16)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+Now using node v19.3.0 (npm v9.2.0)
+
+> real-estate@1.0.0 start:ts
+> ts-node src/index.ts
+
+Now using node v19.3.0 (npm v9.2.0)
+
+> real-estate@1.0.0 start:ts
+> ts-node src/index.ts
+
+TimeoutError: Timed out after 30000 ms while waiting for the WS endpoint URL to appear in stdout!
+    at ChromeLauncher.launch (/root/projects/real-estate/node_modules/puppeteer-core/src/node/ProductLauncher.ts:190:15)
+    at async PuppeteerExtra.launch (/root/projects/real-estate/node_modules/puppeteer-extra/src/index.ts:169:21)
+Now using node v19.3.0 (npm v9.2.0)
+
+> real-estate@1.0.0 start:ts
+> ts-node src/index.ts
+
+TimeoutError: Timed out after 30000 ms while waiting for the WS endpoint URL to appear in stdout!
+    at ChromeLauncher.launch (/root/projects/real-estate/node_modules/puppeteer-core/src/node/ProductLauncher.ts:190:15)
+    at async PuppeteerExtra.launch (/root/projects/real-estate/node_modules/puppeteer-extra/src/index.ts:169:21)
