@@ -83,7 +83,7 @@ export async function buildPage(url: string): Promise<{ page: Page; browser: Bro
     });
   });
 
-  await page.goto(url, { waitUntil: 'networkidle2', timeout: 0 });
+  await page.goto(url, { waitUntil: 'networkidle2', timeout: 120000 });
 
   return { page, browser };
 }
