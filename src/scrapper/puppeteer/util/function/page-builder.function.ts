@@ -9,7 +9,7 @@ export async function buildPage(url: string): Promise<{ page: Page; browser: Bro
     args: [
       '--no-sandbox',
       // '--proxy-server=https://103.167.70.128:8080',
-      "--ignore-certificate-errors",
+      // "--ignore-certificate-errors",
     ]
   });
 
@@ -83,7 +83,7 @@ export async function buildPage(url: string): Promise<{ page: Page; browser: Bro
     });
   });
 
-  await page.goto(url, { waitUntil: 'networkidle2', timeout: 120000 });
+  await page.goto(url, { waitUntil: 'networkidle2', timeout: 1200000 });
 
   return { page, browser };
 }
