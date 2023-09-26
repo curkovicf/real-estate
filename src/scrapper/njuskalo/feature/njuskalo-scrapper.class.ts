@@ -11,6 +11,9 @@ export class NjuskaloScrapper extends Scrapper<SellingItem> {
     const { page, browser } = await buildPage(url);
     this.browser = browser;
 
+    await page.$eval('.entities-count', (el) => el.textContent)
+
+
     const count = Number(await page.$eval('.entities-count', (el) => el.textContent));
     const date = new Date();
 
