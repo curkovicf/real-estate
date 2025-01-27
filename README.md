@@ -6,5 +6,6 @@
 </div>
 
 <div align="center">
-  Simple scrapper which counts number of flats, houses in specific region in Croatia
+  Simple scrapper which counts number of flats, houses in specific region in Croatia.
+  Best used in a CRON job.
 </div>
